@@ -9,7 +9,7 @@ However, when it comes native image, you will see the fail result at `[GET] http
 This time I tested it in my local environment (Mac), so I did these commands to see the result.
 
 ```bash
-# create native imge
+# create native image
 ./mvnw package -Pnative -Dquarkus.native.container-build=true
 
 # create docker image
