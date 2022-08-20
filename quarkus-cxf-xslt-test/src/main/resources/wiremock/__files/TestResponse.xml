@@ -1,0 +1,7 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <ns1:helloResponse xmlns:ns1="http://service.acme.org/">
+            <return>hello</return>
+        </ns1:helloResponse>
+    </soap:Body>
+</soap:Envelope>
