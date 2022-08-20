@@ -6,7 +6,7 @@ If you run `GreetingResourceTest.java`, you will see the success result both `[G
 
 However, when it comes native image, you will see the fail result at `[GET] http://localhost:8080/test/hello1`.
 
-This time I tested my local environment (Mac), so I did these commands to see the result.
+This time I tested it in my local environment (Mac), so I did these commands to see the result.
 
 ```bash
 # create native imge
