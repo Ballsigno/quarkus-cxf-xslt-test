@@ -21,5 +21,4 @@ docker run -i --rm -p 8080:8080 quarkus/quarkus-cxf-xslt-test
 # check
 # [GET] http://localhost:8080/test/hello1 set XSLT, failed
 # [GET] http://localhost:8080/test/hello2 just read the xsl file, success
-# ※ both are success in dev mode.
 ```
