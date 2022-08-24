@@ -25,6 +25,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
+      <dependency>
+        <groupId>${quarkus.platform.group-id}</groupId>
+        <artifactId>quarkus-camel-bom</artifactId>
+        <version>${quarkus.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <dependencies>
@@ -78,6 +85,11 @@
       <version>2.33.2</version>
     </dependency>
 
+    <!-- camel-quarkus-xslt for XSLT feature -->
+    <dependency>
+      <groupId>org.apache.camel.quarkus</groupId>
+      <artifactId>camel-quarkus-xslt</artifactId>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -173,7 +185,8 @@
       <properties>
         <skipITs>false</skipITs>
         <quarkus.package.type>native</quarkus.package.type>
-        <quarkus.native.additional-build-args>-H:IncludeResources=test.xsl</quarkus.native.additional-build-args>
+        <!-- With apache camel, I don't need this. -->
+        <!-- <quarkus.native.additional-build-args>-H:IncludeResources=test.xsl</quarkus.native.additional-build-args> -->
       </properties>
     </profile>
   </profiles>

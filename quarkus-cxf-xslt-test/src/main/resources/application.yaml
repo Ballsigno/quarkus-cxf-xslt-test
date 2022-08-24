@@ -7,3 +7,7 @@ quarkus:
         service-interface: org.acme.service.DummyWebService
         client-endpoint-url: http://localhost:8099/cxf/dummy
         features: org.apache.cxf.ext.logging.LoggingFeature
+  # Apaceh Camel XSLT
+  camel:
+    xslt:
+      sources: test.xsl
